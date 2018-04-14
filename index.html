@@ -1,6 +1,7 @@
 <!DOCTYPE html> <!-- Declaration defines this document to be HTML -->
 <html> <!-- Element is the root element of an HTML page -->
     <head> <!-- Element contains meta information about the document -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>School Schedule</title> <!-- Element specifies a title for the document -->
     </head>
     
@@ -16,27 +17,53 @@
             </ul>
         </nav>
     
-        <div class="header" id="home"> <!-- A container element that acts as the parent to the heading title, div's are used to group elements -->
+        <header class="header" id="home"> <!-- A container element that acts as the parent to the heading title, div's are used to group elements -->
             <h1>Saint Michael Catholic High School</h1> <!-- This element is a child of the "title" parent div -->
-        </div>
+        </header>
     
         <div class="sections home-section">
-        <section>
-            <img src="home.jpeg" alt="Home Picture">
-        </section>
+            <section>
+                <h2>Home</h2>
+                <img src="home.jpeg" alt="Home Picture">
+                <p>Lorem ipsum dolor amet vHS godard vice mlkshk palo santo paleo pop-up aesthetic typewriter. Hot chicken migas hashtag pabst. Synth poke scenester kombucha butcher mustache lomo banh mi plaid. Tacos snackwave locavore gentrify wolf typewriter, dreamcatcher sartorial mlkshk.<br><br>Lorem ipsum dolor amet vHS godard vice mlkshk palo santo paleo pop-up aesthetic typewriter. Hot chicken migas hashtag pabst. Synth poke scenester kombucha butcher mustache lomo banh mi plaid. Tacos snackwave locavore gentrify wolf typewriter, dreamcatcher sartorial mlkshk.</p>
+            </section>
         </div>
     
         <div class="sections about-section" id="about">
-        <section>
-            <img src="about.jpeg" alt="About Picture">
-        </section>
+            <section>
+                <h2>About Me</h2>
+                <img src="about.jpeg" alt="About Picture">
+                <p>Lorem ipsum dolor amet vHS godard vice mlkshk palo santo paleo pop-up aesthetic typewriter. Hot chicken migas hashtag pabst. Synth poke scenester kombucha butcher mustache lomo banh mi plaid. Tacos snackwave locavore gentrify wolf typewriter, dreamcatcher sartorial mlkshk.<br><br>Lorem ipsum dolor amet vHS godard vice mlkshk palo santo paleo pop-up aesthetic typewriter. Hot chicken migas hashtag pabst. Synth poke scenester kombucha butcher mustache lomo banh mi plaid. Tacos snackwave locavore gentrify wolf typewriter, dreamcatcher sartorial mlkshk.</p>
+            </section>
         </div>
     
         <div class="sections contact-section" id="contact">
-        <section>
-            <img src="contact.jpeg" alt="Contact Picture">
-        </section>
+                <h2>Contact Me</h2>
+                <img src="contact.jpeg" alt="Contact Picture">
+            <div class="contact-info">
+                    <address>
+                      123 Fake Street<br>Faketown, ON Canada<br>B3G 5H8
+                    </address>
+                    <a href="tel:1-905-123-4567">(905) 123-4567</a>
+                    <a href="mailto:fakeemail@gmail.com">fakeemail@gmail.com</a>
+            </div>
         </div>
+    
+        <footer>
+            <div class="icons">
+                    <div class="icon-style">
+                        <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="icon-style">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="icon-style">
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                    </div>
+            </div>
+        </footer>
+
+
     
     
     <style> /* This section styles the HTML by selecting specific elements and providing style direction */
@@ -49,6 +76,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            line-height: 1.5;
         }
         
         .header { /* This is the parent container of the title element*/
@@ -60,6 +88,10 @@
             height: 50vh;
         }
         
+        footer {
+            border-top: 5px solid black;
+        }
+        
         h1 { /* Targeting the h1 element in order to style it */
             color: white;
             font-size: 65px; 
@@ -68,10 +100,29 @@
             background: rgba(215, 40, 40, 0.5);
         }
         
+        h2 {
+            color: black;
+            font-size: 70px;
+            text-align: center;
+        }
+        
+        p {
+            font-size: 25px;
+            padding: 50px;
+            text-align: left;
+            background: white;
+            width: 70vw;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        
         img {
             display: block; /*Displays an element as a block element. It starts on a new line, and takes up the whole width*/
             margin: 0 auto; /* Always keeps the image centered*/
             max-width: 100%; /* Will shrink the image when screen size changes in order to display 100% of the image*/
+            border-radius: 15px;
+            width: 1000px;
+            height: auto;
         }
         
         
@@ -111,8 +162,67 @@
         
          .sections {
             border-top: 5px solid black;
-            padding-top: 50px;
-            padding-bottom: 50px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        
+        .home-section {
+            background-color: whitesmoke;
+        }
+        
+        .about-section {
+            background-color: papayawhip;
+        }
+        
+        .contact-section {
+            background-color: lightgoldenrodyellow;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            font-size: 25px;
+            padding: 50px;
+        }
+        
+        .contact-info a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .contact-info a:hover {
+            color: darkred;
+        }
+        
+        .icons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-top: 20px;
+        }
+
+        .icon-style {
+            border: 1px solid rgba(0, 0, 0, 0.7);
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            background-size: 30px;
+            width: 70px;
+            height: 70px;
+            padding: 12px;
+            margin: 15px;
+            vertical-align: bottom;
+            text-align: center;
+        }
+
+        .icon-style:hover {
+            background-color:  darkred;
+        }
+        
+        .icon-style a {
+            color: white;
+            font-size: 45px;
         }
     
     </style>
