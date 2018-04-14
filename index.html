@@ -1,0 +1,121 @@
+<!DOCTYPE html> <!-- Declaration defines this document to be HTML -->
+<html> <!-- Element is the root element of an HTML page -->
+    <head> <!-- Element contains meta information about the document -->
+    <title>School Schedule</title> <!-- Element specifies a title for the document -->
+    </head>
+    
+<body> <!-- Element contains the visible page content -->
+        
+        <!-- A class allows you to name a container or element so you can target it. When we style this container, we are targeting it's class name "title" -->
+    
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <div class="title"> <!-- A container element that acts as the parent to the heading title, div's are used to group elements -->
+            <h1>Saint Michael Catholic High School</h1> <!-- This element is a child of the "title" parent div -->
+        </div>
+    
+        <div class="sections home-section" id="home">
+        <section>
+            <img src="home.jpeg" alt="Home Picture">
+        </section>
+        </div>
+    
+        <div class="sections about-section" id="about">
+        <section>
+            <img src="about.jpeg" alt="About Picture">
+        </section>
+        </div>
+    
+        <div class="sections contact-section" id="contact">
+        <section>
+            <img src="contact.jpeg" alt="Contact Picture">
+        </section>
+        </div>
+    
+    
+    <style> /* This section styles the HTML by selecting specific elements and providing style direction */
+        
+        
+        /*************Global Styling****************/
+        
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .title { /* This is the parent container of the title element*/
+            padding-bottom: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+            max-width: 1200px; /* Title will stop growing once the screen width reaches 1200 pixels*/
+            margin: 0 auto; /* Always keeps the title centered*/
+        }
+        
+        h1 { /* Targeting the h1 element in order to style it */
+            color: darkred;
+            font-size: 56px; 
+            text-align: center; 
+            border: 2px solid black; 
+            padding: 15px;
+        }
+        
+        img {
+            display: block; /*Displays an element as a block element. It starts on a new line, and takes up the whole width*/
+            margin: 0 auto; /* Always keeps the image centered*/
+            max-width: 100%; /* Will shrink the image when screen size changes in order to display 100% of the image*/
+        }
+        
+        
+        /******************Navigation Styling**********************/
+        
+        nav {
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            background: black;
+        }
+        
+        nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 20px;
+            color: white;
+            padding-right: 25px;
+        }
+        
+        nav ul li a:hover {
+            color: darkred;
+        }
+        
+        
+        /*****************Separate Section Styling********************/
+        
+         .sections {
+            border-top: 5px solid black;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    
+    </style>
+
+</body>
+    
+</html>
