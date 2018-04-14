@@ -16,11 +16,11 @@
             </ul>
         </nav>
     
-        <div class="title"> <!-- A container element that acts as the parent to the heading title, div's are used to group elements -->
+        <div class="header" id="home"> <!-- A container element that acts as the parent to the heading title, div's are used to group elements -->
             <h1>Saint Michael Catholic High School</h1> <!-- This element is a child of the "title" parent div -->
         </div>
     
-        <div class="sections home-section" id="home">
+        <div class="sections home-section">
         <section>
             <img src="home.jpeg" alt="Home Picture">
         </section>
@@ -51,20 +51,21 @@
             box-sizing: border-box;
         }
         
-        .title { /* This is the parent container of the title element*/
-            padding-bottom: 20px;
-            padding-left: 15px;
-            padding-right: 15px;
-            max-width: 1200px; /* Title will stop growing once the screen width reaches 1200 pixels*/
+        .header { /* This is the parent container of the title element*/
+            background-image: url(background-pic.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 100px;
             margin: 0 auto; /* Always keeps the title centered*/
+            height: 50vh;
         }
         
         h1 { /* Targeting the h1 element in order to style it */
-            color: darkred;
-            font-size: 56px; 
-            text-align: center; 
-            border: 2px solid black; 
-            padding: 15px;
+            color: white;
+            font-size: 65px; 
+            text-align: center;
+            margin-top: 100px;
+            background: rgba(215, 40, 40, 0.5);
         }
         
         img {
