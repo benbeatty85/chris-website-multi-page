@@ -2,7 +2,7 @@
 <html> <!-- Element is the root element of an HTML page -->
     <head> <!-- Element contains meta information about the document -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>School Schedule</title> <!-- Element specifies a title for the document -->
+    <title>Title of Website</title> <!-- Element specifies a title for the document -->
     </head>
     
 <body> <!-- Element contains the visible page content -->
@@ -41,11 +41,11 @@
                 <h2>Contact Me</h2>
                 <img src="contact.jpeg" alt="Contact Picture">
             <div class="contact-info">
-                    <address>
+                    <address class="contact-background">
                       123 Fake Street<br>Faketown, ON Canada<br>B3G 5H8
                     </address>
-                    <a href="tel:1-905-123-4567">(905) 123-4567</a>
-                    <a href="mailto:fakeemail@gmail.com">fakeemail@gmail.com</a>
+                    <a href="tel:1-905-123-4567" class="contact-background">(905) 123-4567</a>
+                    <a href="mailto:fakeemail@gmail.com" class="contact-background">fakeemail@gmail.com</a>
             </div>
         </div>
     
@@ -104,6 +104,8 @@
             color: black;
             font-size: 70px;
             text-align: center;
+            text-transform: capitalize;
+            text-decoration: underline;
         }
         
         p {
@@ -135,7 +137,7 @@
             left: 0;
             width: 100%;
             text-align: center;
-            background: black;
+            background: rgba(0,0,0,0.8);
         }
         
         nav ul li {
@@ -175,14 +177,14 @@
         }
         
         .contact-section {
-            background-color: lightgoldenrodyellow;
+            background-color: white;
         }
         
         .contact-info {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            font-size: 25px;
+            font-size: 40px;
             padding: 50px;
         }
         
@@ -195,6 +197,13 @@
             color: darkred;
         }
         
+        .contact-background {
+            background-color: rgba(155,155,155,0.7);
+            padding: 15px;
+            border-radius: 15px;
+            align-self: center;
+        }
+        
         .icons {
             display: flex;
             justify-content: center;
@@ -203,16 +212,14 @@
         }
 
         .icon-style {
-            border: 1px solid rgba(0, 0, 0, 0.7);
+            border: 1px solid black;
             border-radius: 50%;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.6);
             color: white;
-            background-size: 30px;
             width: 70px;
             height: 70px;
             padding: 12px;
             margin: 15px;
-            vertical-align: bottom;
             text-align: center;
         }
 
